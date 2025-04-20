@@ -1,0 +1,210 @@
+/* KuralDisplay.css */
+.kural-display {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.kural-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: var(--neutral-50);
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.kural-number {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kural-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.action-button {
+  background-color: white;
+  border: 1px solid var(--neutral-200);
+  border-radius: 6px;
+  padding: 8px;
+  color: var(--neutral-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.action-button:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-light);
+}
+
+.kural-content {
+  padding: 32px 24px;
+}
+
+.kural-lines {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.kural-line {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  color: var(--neutral-900);
+  margin-bottom: 8px;
+}
+
+.tab-navigation {
+  display: flex;
+  border-bottom: 1px solid var(--neutral-200);
+  margin-bottom: 24px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab-navigation::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  color: var(--neutral-700);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+  color: var(--primary-color);
+}
+
+.tab-button.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+}
+
+.tab-content {
+  padding: 4px 0;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--neutral-800);
+  margin-bottom: 12px;
+}
+
+.section p {
+  line-height: 1.7;
+  color: var(--neutral-700);
+  margin-bottom: 12px;
+}
+
+.section p:last-child {
+  margin-bottom: 0;
+}
+
+.kural-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid var(--neutral-200);
+  background-color: var(--neutral-50);
+}
+
+.kural-nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--neutral-700);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-button:hover {
+  color: var(--primary-color);
+}
+
+.share-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.share-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--neutral-200);
+  color: var(--neutral-700);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.share-icon:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 640px) {
+  .kural-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .kural-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .kural-line {
+    font-size: 1.2rem;
+  }
+  
+  .tab-button {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .kural-footer {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .kural-nav-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .share-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
