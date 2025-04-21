@@ -3,8 +3,7 @@
 ## Overview
 The **Thirukkural Fetching Website** is a web application designed to retrieve and display Thirukkural verses from a MongoDB database. Users can explore the vast collection of couplets, understand their meanings, and navigate through different categories with ease.
 
-![Screenshot 2025-04-20 220405](https://github.com/user-attachments/assets/18c7c538-b9e0-459b-abea-1fdf898704bb)
-
+![image](https://github.com/user-attachments/assets/d1cbfd93-e567-4c2e-9c4e-17eb6817acd0)
 
 ## Features
 - Fetch Thirukkural verses dynamically from a MongoDB database
