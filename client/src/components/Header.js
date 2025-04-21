@@ -7,8 +7,8 @@ const Header = ({ kuralNo, setKuralNo, handleSubmit }) => {
     <header className="header">
       <div className="header-container">
         <div className="logo-container">
-          <div className="logo">த</div>
-          <h1>திருக்குறள்-THIRUKKURAL</h1>
+          <img src="/fav.jpg" alt="Thirukkural Logo" className="logo" />
+          <h1>திருக்குறள் - THIRUKKURAL</h1>
         </div>
         <div className="search-container">
           <KuralForm
